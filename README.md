@@ -1,3 +1,27 @@
+Project name: Basic-Web-Development
+Git live Site Link: http://localhost:3000/
+Welcome to Basic Web Development
+ Project. Here You can learn about REACT, BOOSTRAP, TAILWIND, NODE JS, CSS, HTML . All Courses duration in between 100hr & 250 hr. 
+
+ To make the website i have gone through some process:
+1. I have used api to load data.
+2. I have used react-bootstrap.
+3. I have use react route.
+4. I have use react icon.
+5. I have used firbase.
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -11,7 +11,8 @@ const Cart = ({ children }) => {
     const cour = useLoaderData();
     return (
         <Container>
-            <div className='text-warning'><h3>Cart</h3></div>
+            <div className='text-warning, justifu'>
+                <h1>Cart</h1></div>
             <Card >
                 <Card.Header className='mb-2 d-flex justify-content-between '>
                     <div className='text-info'><Card.Title>{cour.name}</Card.Title></div>

@@ -28,14 +28,14 @@ const Header = () => {
 
 
 
-                <Navbar.Brand> <Link style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to='/' ><FaBattleNet></FaBattleNet> Basic Web Development</Link></Navbar.Brand>
+                <Navbar.Brand> <Link style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to='/' ><FaBattleNet></FaBattleNet> Basic-Web-Development</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto ">
                         <Link className='mx-2' style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to={`/`}>Home</Link>
                         <Link className='mx-2' style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to={`/coursedetail/:id`}>Courses</Link>
-                        <Link className='mx-2' style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to={`/`}>FAQ</Link>
-                        <Link className='mx-2' style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to={`/`}>Blogs</Link>
+                        <Link className='mx-2' style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to={`/faq`}>FAQ</Link>
+                        <Link className='mx-2' style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to={`/blog`}>Blogs</Link>
                         <Link className='mx-2' style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to={`/registration`}>Registration</Link>
 
                     </Nav>
@@ -63,7 +63,7 @@ const Header = () => {
                                     key={placement}
                                     placement={placement}
                                     overlay={
-                                        user?.uid
+                                        user?.accessToken
                                             ?
                                             <Tooltip id={`tooltip-${placement}`}>
                                                 <span>{user?.displayName}</span>

@@ -22,7 +22,7 @@ const CoursesList = () => {
                 {
                     categor.map(category => <li key={category.id}>
                         <Link
-                            style={{ textDecoration: 'none', color: 'Aqua' }}
+                            style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }}
                             to={`/details/${category.id}`}>
                             {category.name}
                         </Link>
