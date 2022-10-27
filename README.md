@@ -10,6 +10,9 @@ Welcome to Basic Web Development
 4. I have use react icon.
 5. I have used firbase.
 
+Features on this website:
+1. In home section the website will welcome you.
+2. In Course section you can see all the available courses in body.
 
 
 
