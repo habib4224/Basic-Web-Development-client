@@ -17,7 +17,7 @@ const Detailse = () => {
     const componentRef = useRef();
     const handlebtn = useReactToPrint({
         content: () => componentRef.current,
-        documentTitle: 'file',
+        documentTitle: `${coursess.name}`,
         onAfterPrint: () => alert('Downloaded')
 
     })
