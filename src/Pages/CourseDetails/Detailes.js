@@ -38,7 +38,7 @@ const Detailse = () => {
                     </div>
                     <div>
                         <div>
-                            {['bottom'].map((placement) => (
+                            {['right'].map((placement) => (
                                 <OverlayTrigger
                                     key={placement}
                                     placement={placement}
