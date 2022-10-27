@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { FaBattleNet, FaUser } from "react-icons/fa";
+import { FaCentercode, FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import Image from 'react-bootstrap/Image';
@@ -29,7 +29,7 @@ const Header = () => {
 
 
 
-                <Navbar.Brand> <Link style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to='/' ><FaBattleNet></FaBattleNet> Basic-Web-Development</Link></Navbar.Brand>
+                <Navbar.Brand> <Link style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to='/' ><FaCentercode></FaCentercode> Basic-Web-Development</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto ">
