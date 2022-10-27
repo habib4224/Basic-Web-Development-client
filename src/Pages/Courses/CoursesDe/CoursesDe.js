@@ -9,12 +9,12 @@ import { Row, Col } from 'react-bootstrap';
 
 const CoursesDe = () => {
 
-    const [catago, setCatago] = useState([]);
+    const [cat, setCat] = useState([]);
 
     useEffect(() => {
         fetch('https://basic-web-devolepment-server-ex.vercel.app/course-cat')
             .then(res => res.json())
-            .then(data => setCatago(data));
+            .then(data => setCat(data));
 
     }, [])
 
@@ -22,7 +22,7 @@ const CoursesDe = () => {
         <div>
             <Row xs={1} md={2} className="g-4">
                 {
-                    catago.map(category =>
+                    cat.map(category =>
                         <Col >
                             <Card key={category.id} style={{ width: '25rem', height: 'auto' }} >
 
