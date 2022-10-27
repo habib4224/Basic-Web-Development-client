@@ -31,7 +31,7 @@ const CoursesDe = () => {
                                     <Card.Title className='text-info'>{category.name}</Card.Title>
                                     <Card.Text className='pb-4'>{category.heading}
                                     </Card.Text>
-                                    <div className=' d-grid'> <Link to={`/details/${category.id}`}><Button size="lg" variant="outline-info bottom" style={{ position: 'absolute', bottom: '0', }} >Course Detailse <FaArrowCircleRight></FaArrowCircleRight></Button>
+                                    <div className=' d-grid'> <Link to={`/details/${category.id}`}><Button size="lg" variant="outline-info bottom" style={{ position: 'absolute', bottom: '0', }} >Course Details <FaArrowCircleRight></FaArrowCircleRight></Button>
                                     </Link></div>
                                 </Card.Body>
 
