@@ -5,12 +5,24 @@ import Card from 'react-bootstrap/Card';
 import { Container } from 'react-bootstrap';
 import { FaClock, FaRegFilePdf } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useReactToPrint } from 'react-to-print';
+import { useRef } from 'react';
+
+
 const Detailse = () => {
 
     const coursess = useLoaderData();
 
+
+    const componentRef = useRef();
+    const handlebtn = useReactToPrint({
+        content: () => componentRef.current,
+        documentTitle: 'file',
+        onAfterPrint: () => alert('Downloaded')
+
+    })
     return (
-        <Container>
+        <Container ref={componentRef} style={{ width: '100%', height: window.innerHeight }}>
 
             <Card style={{ width: '70%', height: 'auto' }} >
 
@@ -23,7 +35,9 @@ const Detailse = () => {
                         </Card.Text>
                     </div>
                     <div>
-                        <h4><FaRegFilePdf className='text-info text-large'> </FaRegFilePdf></h4>
+                        <button onClick={handlebtn} className='btn btn-outline-light'>
+                            <h3><FaRegFilePdf className='text-info text-large'> </FaRegFilePdf></h3>
+                        </button>
                     </div>
                 </Card.Header>
 
