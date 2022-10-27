@@ -7,6 +7,8 @@ import { FaClock, FaRegFilePdf } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useReactToPrint } from 'react-to-print';
 import { useRef } from 'react';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import { Tooltip } from 'react-bootstrap';
 
 
 const Detailse = () => {
@@ -35,9 +37,27 @@ const Detailse = () => {
                         </Card.Text>
                     </div>
                     <div>
-                        <button onClick={handlebtn} className='btn btn-outline-light'>
-                            <h3><FaRegFilePdf className='text-info text-large'> </FaRegFilePdf></h3>
-                        </button>
+                        <div>
+                            {['bottom'].map((placement) => (
+                                <OverlayTrigger
+                                    key={placement}
+                                    placement={placement}
+                                    overlay={
+
+                                        <Tooltip id={`tooltip-${placement}`}>
+                                            <span>Downloade</span>
+                                        </Tooltip>
+
+                                    }
+                                >
+                                    <button onClick={handlebtn} className='btn btn-outline-light'>
+                                        <h3><FaRegFilePdf className='text-info text-large'> </FaRegFilePdf></h3>
+                                    </button>
+                                </OverlayTrigger>
+                            ))}
+                        </div>
+
+
                     </div>
                 </Card.Header>
 
