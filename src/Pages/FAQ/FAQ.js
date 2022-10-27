@@ -1,16 +1,10 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Form from 'react-bootstrap/Form';
+
 
 const FAQ = () => {
     return (
         <Container >
-            <Form>
-                <Form.Check
-                    type="switch"
-                    id="custom-switch"
-                />
-            </Form>
             <div className='m-6, text-info'>
                 <h2> Question: <small>
                     Can i Payment Installment?
