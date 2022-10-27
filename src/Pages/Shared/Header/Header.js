@@ -10,6 +10,7 @@ import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import { Tooltip } from 'react-bootstrap';
+import Form from 'react-bootstrap/Form';
 
 
 const Header = () => {
@@ -37,7 +38,12 @@ const Header = () => {
                         <Link className='mx-2' style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to={`/faq`}>FAQ</Link>
                         <Link className='mx-2' style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to={`/blog`}>Blogs</Link>
                         <Link className='mx-2' style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to={`/registration`}>Registration</Link>
-
+                        <Form>
+                            <Form.Check
+                                type="switch"
+                                id="custom-switch"
+                            />
+                        </Form>
                     </Nav>
                     <Nav>
                         <Link className='mx-2' style={{ textDecoration: 'none', color: 'Aqua', fontWeight: 'bold' }} to={`/`}>{
